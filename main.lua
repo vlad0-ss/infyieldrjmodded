@@ -6925,7 +6925,7 @@ end)
 addcmd("rejoin", {"rj"}, function(args, speaker)
 	if #Players:GetPlayers() <= 1 then
 		Players.LocalPlayer:Kick("\nRejoining...")
-		wait()
+		wait(3)
 		TeleportService:Teleport(PlaceId, Players.LocalPlayer)
 	else
 		--TeleportService:TeleportToPlaceInstance(PlaceId, JobId, Players.LocalPlayer)
